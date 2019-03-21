@@ -124,5 +124,41 @@ namespace Vidly.Controllers
 
             return RedirectToAction("Index", "Movies");
         }
+
+        //// GET: Movies/args
+        //public ActionResult Index(int? pageIndex, string sortBy)
+        //{
+        //    if (!pageIndex.HasValue) pageIndex = 1;
+        //    if (string.IsNullOrWhiteSpace(sortBy)) sortBy = "Name";
+        //    //example usage of args
+        //    return Content(string.Format("PageIndex={0} SortBy={1}", pageIndex, sortBy));
+        //}
+
+
+        //// GET: Movies/Random
+        //public ActionResult Random()
+        //{
+        //    var movie = new Movies() { Name = "Avengers: End Game" };
+        //    var customers = new List<Customer>
+        //    {
+        //        new Customer { Name = "Jerry" },
+        //        new Customer { Name = "Tom" }
+        //    };
+
+        //    var viewModel = new RandomMovieViewModel
+        //    {
+        //        Movie = movie,
+        //        Customers = customers
+        //    };
+
+        //    return View(viewModel);
+        //}
+
+
+        //[Route("movies/released/{year:regex(\\d{4})}/{month:regex(\\d{2}):range(1,12)}")]
+        //public ActionResult ByReleaseDate(int year, int month)
+        //{
+        //    return Content(string.Format("{1}/{0}", year, month));
+        //}
     }
 }
